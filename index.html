@@ -173,13 +173,13 @@
             <td class="happenin" rowspan="2">
               <div class="title">Rekry Speed Dating</div>
               <p>
-                Ilmoittautumisohjeet alempana.
+                Ilmoittautuminen alkaa pian.
               </p>
             </td>
             <td class="happenin" rowspan="2">
               <div class="title">Rekry Speed Dating</div>
               <p>
-                Ilmoittautumisohjeet alempana.
+                Ilmoittautuminen alkaa pian.
               </p>
             </td>
           </tr>
@@ -317,7 +317,7 @@
             <td class="happenin">
               <div class="title" id="timeLeft">
                 <div id="clockdiv">Vielä
-                  <span class="days"></span> pvää!
+                  <span class="days"></span> päivää!
                 </div>
               </div>
             </td>
@@ -341,11 +341,11 @@
         <div class="col-6">
           <h2>Rekry Speed Dating</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Haluatko mukaan? Ilmoittautuminen aukeaa lähempänä tapahtumaa, mutta kannattaa alkaa jo kiilloitella LinkedIn ja GitHub -profiileja ja kirjoitella rekrytoijat hurmaavat iskurepliikit valmiiksi.
           </p>
           <p>
             <br />
-            <a href="#" class="bright">Ilmoittaudu mukaan!</a>
+            <!--<a href="#" class="bright">Ilmoittaudu mukaan!</a>-->
           </p>
         </div>
         <div class="col-6">
@@ -403,6 +403,10 @@
           var timeLeft = document.getElementById("timeLeft");
           if ( t.days <= 0 ) {
             timeLeft.innerHTML = "JOO!";
+          }
+
+          if ( t.days == 1 ) {
+            timeLeft.innerHTML = "HUOMENNA!";
           }
 
           if (t.total <= 0) {
