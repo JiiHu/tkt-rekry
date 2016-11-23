@@ -224,6 +224,15 @@ section.darker .time {
   text-align: right;
 }
 
+.text-container {
+  max-width: 1000px;
+  margin: 1rem auto;
+}
+
+.text-container p {
+  margin: 1rem 0;
+}
+
 .table-container {
   overflow: scroll;
 }
