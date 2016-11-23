@@ -311,6 +311,35 @@ td.happenin p {
   width: 50%;
 }
 
+a {
+  border-bottom: 2px solid #666;
+  color: #666;
+  display: inline-block;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.2s linear;
+}
+
+.darker a {
+  border-bottom: 2px solid #ccc;
+  color: #ccc;
+  text-transform: none;
+}
+
+a.bright {
+  border-bottom: 2px solid #fffd00;
+  color: #fffd00;
+}
+
+a:active,
+a:focus,
+a:hover {
+  letter-spacing: 0.05em;
+  text-decoration: none;
+}
+
 @media screen and (max-width: 767px) {
 
   h1 {
