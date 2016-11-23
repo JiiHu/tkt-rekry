@@ -156,12 +156,9 @@
           <tr>
             <td class="time">Joko?</td>
             <td class="happenin">
-              <div class="title">
+              <div class="title" id="timeLeft">
                 <div id="clockdiv">Vielä
-                  <span class="days"></span> pvää
-                  <span class="hours"></span> tuntia
-                  <span class="minutes"></span> minuuttia
-                  <span class="seconds"></span> sekuntia
+                  <span class="days"></span> pvää!
                 </div>
               </div>
             </td>
@@ -228,9 +225,15 @@
           var t = getTimeRemaining(endtime);
 
           daysSpan.innerHTML = t.days;
-          hoursSpan.innerHTML = t.hours;
-          minutesSpan.innerHTML = t.minutes;
-          secondsSpan.innerHTML = t.seconds;
+          //hoursSpan.innerHTML = t.hours;
+          //minutesSpan.innerHTML = t.minutes;
+          //secondsSpan.innerHTML = t.seconds;
+
+
+          var timeLeft = document.getElementById("timeLeft");
+          if ( t.days <= 0 ) {
+            timeLeft.innerHTML = "JOO!";
+          }
 
           if (t.total <= 0) {
             clearInterval(timeinterval);
