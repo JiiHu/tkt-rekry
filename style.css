@@ -256,7 +256,7 @@ table.program td {
 table.program th {
   font-weight: 700;
   letter-spacing: 0.05em;
-  text-align: center;
+  text-align: lef;
 }
 td.time {
   font-weight: 300;
