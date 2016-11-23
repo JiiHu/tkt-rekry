@@ -130,12 +130,25 @@ section.hero {
   color: #fff;
   padding-bottom: 20%;
   padding-top: 20%;
+  position: relative;
 }
 
 section.two-columned .container,
 section.hero .container {
   margin: 0 auto;
   max-width: 1100px;
+}
+
+section.hero .languages {
+  bottom: 20px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+}
+
+section.hero .languages a {
+  color: #fff;
 }
 
 section.hero p {
@@ -146,6 +159,10 @@ section.hero p {
 section.coop {
   color: #ccc;
   padding: 30px 20px 30px;
+}
+
+section.coop a {
+  border: none;
 }
 
 footer {
