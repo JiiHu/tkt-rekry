@@ -172,7 +172,7 @@ footer img {
 
 .logos img {
   display: inline;
-  margin: 0 10px;
+  margin: 5px 10px;
   max-height: 30px;
   max-width: 100px;
 }
@@ -222,6 +222,10 @@ section.darker .time {
 
 .right {
   text-align: right;
+}
+
+.table-container {
+  overflow: scroll;
 }
 
 table.program {
