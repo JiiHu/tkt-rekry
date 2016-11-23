@@ -232,12 +232,18 @@ table.program {
 }
 
 table.program-upper {
+  margin: 0 auto;
+  max-width: 1000px;
   width: 100%;
 }
 
 table.program-upper td,
 table.program-upper th {
   border-bottom: 3px solid rgba(255,255,255,0.3);
+}
+
+table.program-upper td.happenin {
+  border-left: 3px solid rgba(255,255,255,0.3);
 }
 table.program-upper td.time,
 table.program-upper th.time {
@@ -255,7 +261,7 @@ table.program td {
 table.program th {
   font-weight: 700;
   letter-spacing: 0.05em;
-  text-align: lef;
+  text-align: center;
 }
 td.time {
   font-weight: 300;
