@@ -117,7 +117,7 @@ small {
 }
 
 section {
-  padding: 80px 30px;
+  padding: 80px 10px;
 }
 
 section.hero {
@@ -144,7 +144,7 @@ section.hero p {
 
 section.coop {
   color: #ccc;
-  padding: 30px 20px 40px;
+  padding: 30px 20px 30px;
 }
 
 footer {
@@ -157,27 +157,24 @@ footer img {
   max-width: 80px;
 }
 
-table.logos,
-table.logos td,
-table.logos tr {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-table.logos td {
-  padding: 0 5px;
+.centered-block {
+  display: inline-block;
+  margin: 0 auto;
+  width: auto;
 }
 
-table.logos {
-  margin-top: 30px;
+
+.logos {
+  display: inline-block;
+  margin: 0 auto 0;
   text-align: center;
-  width: 100%;
 }
 
-table.logos img {
+.logos img {
   display: inline;
-  max-height: 40px;
-  max-width: 100%;
+  margin: 0 10px;
+  max-height: 30px;
+  max-width: 100px;
 }
 
 
@@ -189,6 +186,16 @@ table.logos img {
 
 section.every-other {
   background: #eee;
+}
+
+section.darker {
+  background: #333;
+  color: #eee;
+}
+
+section.darker small,
+section.darker .time {
+  color: #aaa;
 }
 
 .section-last {
@@ -221,9 +228,31 @@ table.program {
   margin-bottom: 15px;
 }
 
+table.program-upper {
+  width: 100%;
+}
+
+table.program-upper td,
+table.program-upper th {
+  border-bottom: 3px solid rgba(255,255,255,0.3);
+}
+table.program-upper td.time,
+table.program-upper th.time {
+  text-align: center;
+}
+
+table.program td,
+table.program th {
+  padding: 5px 5px;
+}
+
 table.program td {
   font-size: 110%;
-  padding-bottom: 10px;
+}
+table.program th {
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-align: center;
 }
 td.time {
   font-weight: 300;
