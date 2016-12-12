@@ -396,11 +396,11 @@
 
 
           var timeLeft = document.getElementById("timeLeft");
-          if ( t.days <= 0 ) {
+          if ( t.days+1 <= 0 ) {
             timeLeft.innerHTML = "YES!";
           }
 
-          if ( t.days == 1 ) {
+          if ( t.days+1 == 1 ) {
             timeLeft.innerHTML = "TOMORROW!";
           }
 
