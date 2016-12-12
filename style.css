@@ -281,6 +281,11 @@ table.program-upper td.inactive {
 table.program-upper td.happenin {
   border-left: 3px solid #f4f4f4;
 }
+
+table.program-upper td.happenin a {
+    letter-spacing: normal;
+}
+
 table.program-upper td.time,
 table.program-upper th.time {
   text-align: center;
